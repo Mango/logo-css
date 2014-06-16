@@ -54,6 +54,8 @@ body {
   line-height: 1em;
   position: absolute;
   -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
   font-weight: 500;
 }
 
