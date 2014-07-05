@@ -1,57 +1,41 @@
 body {
-  padding: 0;
-  margin: 150px 0;
+  margin: 150px;
   text-align: center;
+}
+
+.mango,
+.mango span {
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  border-radius: 50% / 12%;
+  overflow: hidden;
+  display: inline-block;
 }
 
 .mango {
-  display: inline-block;
-  width: 180px;
-  height: 215px;
-  font-size: 8.5em;
-  line-height: 1.5em;
-  border-radius: 50% / 25px;
-  background-color: #19B530;
   text-align: center;
-  color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  position: relative;
-  left: 20px;
-}
-
-.mango:before,
-.mango:after  {
-  content:'';
-  display: inline-block;
-  width: 50px;
-  height: 187px;
-  border-radius: 50% / 50%;
-  background-color: #19B530;
-  position:absolute;
-  top: 14px;
-}
-
-.mango:before {
-  left: -14px;
-}
-
-.mango:after {
-  right: -14px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .mango span {
-  position: relative;
-  top: 5px;
-  display: inline-block;
-  width: 100%;
-  z-index: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 9em;
+  color: #fff;
+  background-color: #19B530;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform :rotate(-90deg);
 }
 
 .mango span:before,
 .mango span:after {
   display: inline-block;
-  font-size: 1.05em;
+  font-size: 1.2em;
   line-height: 1em;
+  left: .69em;
   position: absolute;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -61,12 +45,10 @@ body {
 
 .mango span:before {
   content: '[';
-  left: 85px;
-  top: -10px;
+  top: -8px;
 }
 
 .mango span:after {
   content: ']';
-  left: 85px;
-  bottom: -10px;
+  bottom: -8px;
 }
